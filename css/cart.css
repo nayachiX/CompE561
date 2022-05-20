@@ -1,0 +1,105 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+#header
+{
+    background-image: url(../../My_web_project/images/10.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.cart ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+
+}
+
+.cart a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+
+.products-container{
+    max-width: 650px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+
+}
+
+.products-container ion-icon{
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+}
+
+.price{
+    width:30%;
+    
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.quantity{
+    width:30%;
+    
+    display: flex;
+    align-items: center;
+}
+
+.total{
+    width:10%;
+    
+    display: flex;
+    align-items: center;
+}
+
+.product{
+    width:15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+   
+}
+
+.boxed-btn {
+    background: #fff;
+    color: #131313;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px 44px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #48B6FB;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #48B6FB !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}

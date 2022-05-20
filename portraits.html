@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portraits</title>
+    <link rel ="icon" href="images/image_icon_WP.PNG">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+         function loadimage(imagesrc, id, name) {
+             
+            localStorage.setItem("Imageurl", imagesrc);
+            localStorage.setItem("Imagename", id);
+            
+            localStorage.setItem("Imagedescription", name);
+            window.location.href = "product.html";
+        }
+    </script>
+</head>
+<body>
+    <section id="portraitheader" style="background-image: url('images/11.jpg');height:75vh; background-position: center;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="images/image_icon_WP.PNG" href="index.html" style="cursor: pointer; width: 2.3em;">
+            <a id="" class="navbar-brand" href="index.html" style="  font-size: 50px;
+            color: rgb(96, 130, 158);
+            text-shadow: 4px 4px 3px rgba(0,0,0,0.1); ">Picture Perfect</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <div style="padding-right: 550px;"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="landscape.html">Landscapes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bold-font" href="portraits.html">Portraits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="films.html">Films</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a class="nav-link" href="cart.html">
+                            <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h2 class="about">Portraits</h2>
+    </section></br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 ls-images ls-images:hover">
+                <img src="images/Landscape5.jpg" id= "Portraits1" name="The" onclick="loadimage(this.src, this.name)" id="image" alt="Snow" style="width: 80%; height: 70%;" class="img-fluid">
+                <p id="name">Portraits1</p>
+                <p id="description">The most beautiful portrait</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 ls-images ls-images:hover">
+                <img src="images/Landscape6.jpg" id= "Portraits2" name="The most beautiful portrait" onclick="loadimage(this.src)" alt="Snow" style="width: 80%; height: 70%;;" class="img-fluid">
+                <p id="name">Portraits2</p>
+                <p id="description">The most beautiful portrait</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 ls-images ls-images:hover">
+                <img src="images/p1.jpg" id= "Portraits3" name="The most beautiful portrait" onclick="loadimage(this.src)" alt="Snow" style="width: 80%; height: 70%;" class="img-fluid">
+                <p id="name">Potraits3</p>
+                <p id="description">The most beautiful portrait</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 ls-images ls-images:hover">
+                <img src="images/p2.jpg" id= "Portraits3" name="The most beautiful portrait" onclick="loadimage(this.src)" alt="Snow" style="width: 80%; height: 70%;" class="img-fluid">
+                <p id="name">Potraits3</p>
+                <p id="description">The most beautiful portrait</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 ls-images ls-images:hover">
+                <img src="images/p3.jpg" id= "Portraits3" name="The most beautiful portrait" onclick="loadimage(this.src)" alt="Snow" style="width: 80%; height: 70%;" class="img-fluid">
+                <p id="name">Potraits3</p>
+                <p id="description">The most beautiful portrait</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 ls-images ls-images:hover">
+                <img src="images/Landscape7.jpg" id= "Portraits3" name="The most beautiful portrait" onclick="loadimage(this.src)" alt="Snow" style="width: 80%; height: 70%;" class="img-fluid">
+                <p id="name">Potraits3</p>
+                <p id="description">The most beautiful portrait</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 ls-images ls-images:hover">
+                <img src="images/p4.jpg" id= "Portraits3" name="The most beautiful portrait" onclick="loadimage(this.src)" alt="Snow" style="width: 80%; height: 70%;" class="img-fluid">
+                <p id="name">Potraits3</p>
+                <p id="description">The most beautiful portrait</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 ls-images ls-images:hover">
+                <img src="images/p5.png" id= "Portraits3" name="The most beautiful portrait" onclick="loadimage(this.src)" alt="Snow" style="width: 80%; height: 70%;" class="img-fluid">
+                <p id="name">Potraits3</p>
+                <p id="description">The most beautiful portrait</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 ls-images ls-images:hover">
+                <img src="images/3.jpg" id= "Portraits3" name="The most beautiful portrait" onclick="loadimage(this.src)" alt="Snow" style="width: 80%; height: 70%;" class="img-fluid">
+                <p id="name">Potraits3</p>
+                <p id="description">The most beautiful portrait</p>
+            </div>
+        </div>
+    </div></br>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="container text-center">
+            <h4>Connect on social media</h4>
+            <div class="social-icons">
+                <a href="#"><img src="socialimages/facebook-icon.png"></a>
+                <a href="#"><img src="socialimages/instagram-icon.png"></a>
+                <a href="#"><img src="socialimages/linkedin-icon.png"></a>
+                <a href="#"><img src="socialimages/snapchat-icon.png"></a>
+                <a href="#"><img src="socialimages/twitter-icon.png"></a>
+                <a href="#"><img src="socialimages/whatsapp-icon.png"></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        onLoadCartNNumbers();
+    </script>
+</body>
+</html>

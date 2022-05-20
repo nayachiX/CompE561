@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#header
+{
+    background-image: url(../../MY_WEB_PROJECT/images/1.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: bottom;
+}
+
+navbar-nav li a
+{
+    float: right;
+    color: #fff!important
+}
+
+#main-title-font
+{
+  
+  font-family: 'Cedarville Cursive';
+  font-size: 50px;
+  color: rgb(96, 130, 158);
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+}
+
+/* ---------------------------welcome-------------------------------- */
+.welcome
+{
+    padding: 50px 100px;
+    margin-top: -60px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 20px 7px rgba(0 0 0 0.2) ;
+}
+
+.welcome h1
+{
+     color: #333;
+}
+.welcome .home-btn
+{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #aeb0b0;
+}
+/* ---------------------------mainbody-------------------------------- */
+#main-body
+{
+    height: 1600px;
+}
+/* ---------------------------homepage-------------------------------- */
+#landscape
+{
+    margin: auto;
+    padding: 50px;
+}
+
+/* ---------------------------footer-------------------------------- */
+#footer
+{
+    height: 15vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #f8f8f8;
+}
+.social-icons img
+{
+    width:60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img
+{
+    transform:translateY(-10px);
+}
+
+.about
+{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 250px;
+}
+
+
+
+
+/*-------------------- common css -------------------------------*/
+.bold-font {
+    font-weight: bold;
+}
+
+.ls-images {
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+
+.ls-images:hover {
+    transform: scale(1.1)
+}
+
+.img-flex {
+    max-width: 150%;
+    height: auto;
+}
+
+.slider {
+    border:0;
+    font-weight:bold;
+}

@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Picture Perfect</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link href="css/w3school.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+
+    </head>
+    <body>
+        <!--------------------HEADER-------------------->
+        <section id="header" style="background-image: url('images/landscape2.jpg');height:75vh; background-position: top;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="images/image_icon_WP.PNG" href="index.html" style="cursor: pointer; width: 2.3em;">
+                <a id="" class="navbar-brand" style="font-size: 50px;color: rgb(96, 130, 158);
+        text-shadow: 4px 4px 3px rgb(0 0 0 / 10%);" href="master.php">Picture Perfect</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="Landscape.php">Landscape</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Poitrait.php">Portraits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="films.html">Films</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
+                        <div class="col-12"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><i class='fas fa-user-tie' style='font-size:24px; margin-left:-2em'></i><?php echo $username ?></a>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+            </section>
+
+        <section id="main-body" style="height: 900px">
+            
+            <div class="container">
+                <div class="row" style="padding: 40px;">
+                    <div class="column" style="max-width: 50%">
+                      <img src="images/8.jpg" alt="Snow" style="width: 100%">
+                    </div>
+                    <div class="column" style="max-width: 50%">
+                        <h1>World class photography skills</h1>
+                        <p>Whether you're about to create a website for the first time, or you're looking 
+                            for a theme that provides advanced capabilities, we have got them in
+                            Blacksilver theme.</p>
+                    </div>
+                  </div>
+                  
+            </div>
+            
+
+            <div class="slideshow-container" style="text-align: center;font-weight: bold;">
+                <h2 style="text-align: center;     color: white;">Testimonials</h2>
+                <div class="mySlides">
+                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                  <p class="author">- John Keats</p>
+                </div>
+                
+                <div class="mySlides">
+                    
+                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                  <p class="author">- Ernest Hemingway</p>
+                </div>
+                
+                <div class="mySlides">
+                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                  <p class="author">- Thomas A. Edison</p>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+        </section>
+         <!--------------------FOOTER-------------------->
+         <section id="footer">
+            <div class="container text-center">
+                <h4>Connect on social media</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="socialimages/facebook-icon.png"></a>
+                    <a href="#"><img src="socialimages/instagram-icon.png"></a>
+                    <a href="#"><img src="socialimages/linkedin-icon.png"></a>
+                    <a href="#"><img src="socialimages/snapchat-icon.png"></a>
+                    <a href="#"><img src="socialimages/twitter-icon.png"></a>
+                    <a href="#"><img src="socialimages/whatsapp-icon.png"></a>
+                </div>
+            </div>
+        
+        </section>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>
